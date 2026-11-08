@@ -1,728 +1,786 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Local e Metadados -->
-    <title>Moradia para Idosos Batista | Residência de Longa Permanência em Santana de Parnaíba</title>
-    <meta name="description" content="Um lar tranquilo, cercado de natureza e cuidado. Moradia permanente para homens e mulheres idosos em Santana de Parnaíba - SP. Agende sua visita.">
-    <meta name="keywords" content="moradia para idosos Santana de Parnaíba, residência para idosos, lar de idosos SP, casa de repouso acolhedora, moradia permanente idosos">
-    <link rel="canonical" href="https://www.moradiabatista.com.br/">
-    
-    <!-- Open Graph / Redes Sociais -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.moradiabatista.com.br/">
-    <meta property="og:title" content="Moradia para Idosos Batista | Lar Tranquilo e Acolhedor">
-    <meta property="og:description" content="Um ambiente de acolhimento, convivência e tranquilidade para viver com respeito e dignidade em Santana de Parnaíba.">
-    <meta property="og:image" content="https://placehold.co/1200x630/66745A/F7F4ED?text=Moradia+para+Idosos+Batista">
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        oliva: '#66745A',
-                        salvia: '#A6AE91',
-                        bege: '#E8DFD0',
-                        offwhite: '#F7F4ED',
-                        madeira: '#806B55',
-                        grafite: '#333333'
-                    },
-                    fontFamily: {
-                        serif: ['Playfair Display', 'serif'],
-                        sans: ['Inter', 'sans-serif']
-                    }
+
+<!-- SEO Local e Metadados -->
+<title>Moradia para Idosos Batista | Residência de Longa Permanência em Santana de Parnaíba</title>
+<meta name="description" content="Um lar tranquilo, cercado de natureza e cuidado. Moradia permanente para homens e mulheres idosos ou que nescessitam de cuidados em Santana de Parnaíba - SP. Agende sua visita.">
+<meta name="keywords" content="moradia para idosos Santana de Parnaíba, residência para idosos, lar de idosos SP, casa de repouso acolhedora, moradia permanente idosos">
+<link rel="canonical" href="https://www.moradiabatista.com.br/">
+
+<!-- Open Graph / Redes Sociais -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.moradiabatista.com.br/">
+<meta property="og:title" content="Moradia para Idosos Batista | Lar Tranquilo e Acolhedor">
+<meta property="og:description" content="Um ambiente de acolhimento, convivência e tranquilidade para viver com respeito e dignidade em Santana de Parnaíba.">
+<meta property="og:image" content="https://placehold.co/1200x630/66745A/F7F4ED?text=Moradia+para+Idosos+Batista">
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    oliva: '#66745A',
+                    salvia: '#A6AE91',
+                    bege: '#E8DFD0',
+                    offwhite: '#F7F4ED',
+                    madeira: '#806B55',
+                    grafite: '#333333',
+                    whatsapp: '#25D366'
+                },
+                fontFamily: {
+                    serif: ['Playfair Display', 'serif'],
+                    sans: ['Inter', 'sans-serif']
                 }
             }
         }
-    </script>
+    }
+</script>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome para Ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #F7F4ED;
-            color: #333333;
-        }
-        h1, h2, h3, h4, .font-serif {
-            font-family: 'Playfair Display', serif;
-        }
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #E8DFD0;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #A6AE91;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #66745A;
-        }
-    </style>
-</head>
-<body class="bg-[#F7F4ED] text-grafite antialiased selection:bg-salvia selection:text-white">
+<!-- FontAwesome para Ícones -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- ARQUIVO DE CONFIGURAÇÃO GLOBAL (Centralizado para fácil alteração) -->
-    <script>
-        window.CONFIG = {
-            nome: "Moradia para Idosos Batista",
-            slogan: "Um lar tranquilo, cercado de natureza e cuidado.",
-            cidade: "Santana de Parnaíba",
-            estado: "SP",
-            // Telefone formatado para exibição visual no site
-            telefoneDisplay: "(11) 99474-4866 / (11) 94159-1579", 
-            // Telefone sem traço/espaços para o botão realizar a ligação diretamente
-            telefoneTel: "+5511994744866", 
-            // Endereço completo da residência
-            endereco: "Estrada do Sítio do Morro, Votuparim", 
-            bairro: "Santana de Parnaíba",
-            cep: "06513-024",
-            email: "contato@moradiabatista.com.br",
-            horario: "Atendimento diário das 08h às 18h"
-        };
-    </script>
+<style>
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: #F7F4ED;
+        color: #333333;
+    }
+    h1, h2, h3, h4, .font-serif {
+        font-family: 'Playfair Display', serif;
+    }
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #E8DFD0;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #A6AE91;
+        border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #66745A;
+    }
+</style>
 
-    <!-- HEADER / NAVEGAÇÃO -->
-    <header id="header" class="fixed top-0 left-0 right-0 z-50 bg-[#F7F4ED]/95 backdrop-blur-md border-b border-[#E8DFD0] transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Logotipo Tipográfico -->
-            <a href="#inicio" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-full bg-oliva flex items-center justify-center text-offwhite shadow-sm group-hover:bg-salvia transition-colors">
-                    <i class="fa-solid fa-house-chimney text-lg"></i>
-                </div>
-                <div>
-                    <span class="block font-serif text-lg font-bold text-oliva tracking-wide">Moradia Batista</span>
-                    <span class="block text-xs text-madeira font-medium uppercase tracking-widest">Santana de Parnaíba</span>
-                </div>
+
+
+<!-- ARQUIVO DE CONFIGURAÇÃO GLOBAL -->
+<script>
+    window.CONFIG = {
+        nome: "Moradia para Idosos Batista",
+        slogan: "Um lar tranquilo, cercado de natureza e cuidado.",
+        cidade: "Santana de Parnaíba",
+        estado: "SP",
+        telefoneDisplay: "(11) 99474-4866 / (11) 94159-1579", 
+        telefoneTel: "+5511994744866", 
+        // Número formatado para o link direto do WhatsApp (Apenas números com DDD e +55)
+        whatsappNumber: "5511994744866",
+        whatsappMensagem: "Por favor mande um áudio e aguarde o nosso retorno!",
+        trabalheConoscoMensagem: "Olá! Gostaria de enviar meu currículo para fazer parte da equipe da Moradia Batista.",
+        endereco: "Estrada do Sítio do Morro, Votuparim", 
+        bairro: "Santana de Parnaíba",
+        cep: "06513-024",
+        email: "moradiabatista@gmail.com",
+        horario: "Atendimento diário das 08h às 20h"
+    };
+</script>
+
+<!-- HEADER / NAVEGAÇÃO -->
+<header id="header" class="fixed top-0 left-0 right-0 z-50 bg-[#F7F4ED]/95 backdrop-blur-md border-b border-[#E8DFD0] transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        <!-- Logotipo Tipográfico -->
+        <a href="#inicio" class="flex items-center gap-3 group">
+            <div class="w-10 h-10 rounded-full bg-oliva flex items-center justify-center text-offwhite shadow-sm group-hover:bg-salvia transition-colors">
+                <i class="fa-solid fa-house-chimney text-lg"></i>
+            </div>
+            <div>
+                <span class="block font-serif text-lg font-bold text-oliva tracking-wide">Moradia Batista</span>
+                <span class="block text-xs text-madeira font-medium uppercase tracking-widest">Santana de Parnaíba</span>
+            </div>
+        </a>
+
+        <!-- Menu Desktop -->
+        <nav class="hidden md:flex items-center space-x-6">
+            <a href="#inicio" class="text-sm font-medium hover:text-oliva transition-colors">Início</a>
+            <a href="#nossa-casa" class="text-sm font-medium hover:text-oliva transition-colors">Nossa Casa</a>
+            <a href="#acolhimento" class="text-sm font-medium hover:text-oliva transition-colors">Acolhimento</a>
+            <a href="#estrutura" class="text-sm font-medium hover:text-oliva transition-colors">Estrutura</a>
+            <a href="#faq" class="text-sm font-medium hover:text-oliva transition-colors">Dúvidas</a>
+            <a href="#contato" class="text-sm font-medium hover:text-oliva transition-colors">Contato</a>
+            <a href="#trabalhe-conosco" class="text-sm font-medium text-madeira hover:text-oliva transition-colors">Trabalhe Conosco</a>
+        </nav>
+
+        <!-- Botões Header -->
+        <div class="hidden lg:flex items-center gap-3">
+            <a id="header-phone-btn" href="tel:+5511994744866" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-full border border-oliva text-oliva text-xs font-semibold hover:bg-oliva hover:text-offwhite transition-all">
+                <i class="fa-solid fa-phone text-xs"></i>
+                <span>Ligar</span>
             </a>
-
-            <!-- Menu Desktop -->
-            <nav class="hidden md:flex items-center space-x-8">
-                <a href="#inicio" class="text-sm font-medium hover:text-oliva transition-colors">Início</a>
-                <a href="#nossa-casa" class="text-sm font-medium hover:text-oliva transition-colors">Nossa Casa</a>
-                <a href="#acolhimento" class="text-sm font-medium hover:text-oliva transition-colors">Acolhimento</a>
-                <a href="#estrutura" class="text-sm font-medium hover:text-oliva transition-colors">Estrutura</a>
-                <a href="#faq" class="text-sm font-medium hover:text-oliva transition-colors">Dúvidas</a>
-                <a href="#contato" class="text-sm font-medium hover:text-oliva transition-colors">Contato</a>
-            </nav>
-
-            <!-- Botão Telefone Header -->
-            <div class="hidden lg:flex items-center">
-                <a id="header-phone-btn" href="tel:+5511994744866" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-oliva text-offwhite text-sm font-medium hover:bg-madeira transition-all shadow-sm">
-                    <i class="fa-solid fa-phone text-xs"></i>
-                    <span id="header-phone-text">(11) 99474-4866 / (11) 94159-1579</span>
-                </a>
-            </div>
-
-            <!-- Botão Menu Mobile (Hamburguer) -->
-            <div class="flex md:hidden">
-                <button id="mobile-menu-btn" aria-label="Abrir menu" class="p-2 rounded-lg text-oliva hover:bg-[#E8DFD0] transition-colors">
-                    <i class="fa-solid fa-bars text-xl"></i>
-                </button>
-            </div>
+            <a id="header-whatsapp-btn" href="#" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-whatsapp text-white text-xs font-semibold hover:opacity-90 transition-all shadow-sm">
+                <i class="fa-brands fa-whatsapp text-sm"></i>
+                <span>WhatsApp</span>
+            </a>
         </div>
 
-        <!-- Menu Mobile Drawer -->
-        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 right-0 bg-[#F7F4ED] border-b border-[#E8DFD0] shadow-lg px-6 py-6 space-y-4">
-            <a href="#inicio" class="block text-base font-medium text-grafite hover:text-oliva mobile-link">Início</a>
-            <a href="#nossa-casa" class="block text-base font-medium text-grafite hover:text-oliva mobile-link">Nossa Casa</a>
-            <a href="#acolhimento" class="block text-base font-medium text-grafite hover:text-oliva mobile-link">Acolhimento</a>
-            <a href="#estrutura" class="block text-base font-medium text-grafite hover:text-oliva mobile-link">Estrutura</a>
-            <a href="#faq" class="block text-base font-medium text-grafite hover:text-oliva mobile-link">Dúvidas Frequentes</a>
-            <a href="#contato" class="block text-base font-medium text-grafite hover:text-oliva mobile-link">Contato</a>
-            <div class="pt-2 border-t border-[#E8DFD0]">
-                <a id="mobile-phone-drawer" href="tel:+5511994744866" class="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-oliva text-offwhite font-medium shadow-sm">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>Ligar Agora</span>
-                </a>
-            </div>
+        <!-- Botão Menu Mobile (Hamburguer) -->
+        <div class="flex md:hidden">
+            <button id="mobile-menu-btn" aria-label="Abrir menu" class="p-2 rounded-lg text-oliva hover:bg-[#E8DFD0] transition-colors">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
         </div>
-    </header>
+    </div>
 
-    <!-- HERO SECTION -->
-    <section id="inicio" class="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden bg-gradient-to-b from-[#E8DFD0]/40 to-[#F7F4ED]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+    <!-- Menu Mobile Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 right-0 bg-[#F7F4ED] border-b border-[#E8DFD0] shadow-lg px-6 py-6 space-y-4">
+        <a href="#inicio" class="block text-base font-medium text-grafite hover:text-oliva mobile-link">Início</a>
+        <a href="#nossa-casa" class="block text-base font-medium text-grafite hover:text-oliva mobile-link">Nossa Casa</a>
+        <a href="#acolhimento" class="block text-base font-medium text-grafite hover:text-oliva mobile-link">Acolhimento</a>
+        <a href="#estrutura" class="block text-base font-medium text-grafite hover:text-oliva mobile-link">Estrutura</a>
+        <a href="#faq" class="block text-base font-medium text-grafite hover:text-oliva mobile-link">Dúvidas Frequentes</a>
+        <a href="#contato" class="block text-base font-medium text-grafite hover:text-oliva mobile-link">Contato</a>
+        <a href="#trabalhe-conosco" class="block text-base font-medium text-madeira hover:text-oliva mobile-link">Trabalhe Conosco</a>
+        <div class="pt-4 border-t border-[#E8DFD0] space-y-2">
+            <a id="mobile-whatsapp-drawer" href="#" target="_blank" class="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-whatsapp text-white font-semibold shadow-sm">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Conversar no WhatsApp</span>
+            </a>
+            <a id="mobile-phone-drawer" href="tel:+5511994744866" class="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-oliva text-offwhite font-medium shadow-sm">
+                <i class="fa-solid fa-phone"></i>
+                <span>Ligar Agora</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- HERO SECTION -->
+<section id="inicio" class="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden bg-gradient-to-b from-[#E8DFD0]/40 to-[#F7F4ED]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Conteúdo Textual -->
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-salvia/20 text-oliva text-xs sm:text-sm font-semibold tracking-wide uppercase">
+                    <i class="fa-solid fa-seedling text-xs"></i> Moradia Permanente para Idosos
+                </div>
                 
-                <!-- Conteúdo Textual -->
-                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-salvia/20 text-oliva text-xs sm:text-sm font-semibold tracking-wide uppercase">
-                        <i class="fa-solid fa-seedling text-xs"></i> Moradia Permanente para Idosos
-                    </div>
-                    
-                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-oliva leading-tight">
-                        Um lar tranquilo, cercado de natureza e cuidado.
-                    </h1>
-                    
-                    <p class="text-base sm:text-lg text-grafite/80 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-                        Uma residência de longa permanência para homens e mulheres idosos, em um ambiente acolhedor, familiar e tranquilo em Santana de Parnaíba.
-                    </p>
-                    
-                    <!-- Botões CTA -->
-                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
-                        <a href="#contato" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-oliva text-offwhite font-semibold hover:bg-madeira transition-all shadow-md text-center">
-                            Agende uma visita
-                        </a>
-                        <a href="#nossa-casa" class="w-full sm:w-auto px-8 py-4 rounded-xl border-2 border-oliva/30 text-oliva font-semibold hover:bg-oliva/10 transition-all text-center">
-                            Conheça nossa casa
-                        </a>
-                    </div>
-
-                    <!-- Selos -->
-                    <div class="pt-6 flex items-center justify-center lg:justify-start gap-6 text-xs text-madeira font-medium">
-                        <div class="flex items-center gap-2">
-                            <i class="fa-solid fa-heart-pulse text-oliva text-base"></i>
-                            <span>Atendimento Humanizado</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <i class="fa-solid fa-tree text-oliva text-base"></i>
-                            <span>Ambiente Verde e Arejado</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Imagem Hero Principal -->
-                <div class="lg:col-span-5 relative">
-                    <div class="relative mx-auto max-w-md lg:max-w-none">
-                        <div class="absolute -inset-4 rounded-3xl bg-salvia/30 transform rotate-2 -z-10"></div>
-                        <img src="assets/images/hero-residencia.jpg" 
-                             alt="Casa ampla e acolhedora cercada por natureza em Santana de Parnaíba" 
-                             class="rounded-2xl shadow-xl w-full h-[420px] sm:h-[500px] object-cover"
-                             onerror="this.src='https://placehold.co/600x700/66745A/FFFFFF?text=Hero+Residencia'">
-                        
-                        <div class="absolute bottom-6 left-6 right-6 bg-offwhite/95 backdrop-blur-sm p-4 rounded-xl shadow-lg border border-[#E8DFD0]">
-                            <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 rounded-full bg-salvia/30 flex items-center justify-center text-oliva">
-                                    <i class="fa-solid fa-mountain-sun"></i>
-                                </div>
-                                <div>
-                                    <p class="text-xs text-madeira font-semibold uppercase tracking-wider">Localização Privilegiada</p>
-                                    <p class="text-sm font-serif font-bold text-oliva">No alto do morro, com vista para bosques</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- NOSSA CASA -->
-    <section id="nossa-casa" class="py-20 md:py-28 bg-[#F7F4ED]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
-                <span class="text-xs font-semibold uppercase tracking-widest text-madeira">Conheça a Instituição</span>
-                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-oliva">
-                    Um ambiente residencial, familiar e tranquilo
-                </h2>
-                <div class="w-20 h-1 bg-salvia mx-auto rounded-full"></div>
-                <p class="text-base sm:text-lg text-grafite/80 pt-2 leading-relaxed">
-                    A Moradia para Idosos Batista foi estruturada para ser um verdadeiro lar. Localizada em Santana de Parnaíba, em uma casa ampla situada no alto de um morro com agradável vista para bosques e áreas verdes, nossa instituição prioriza o bem-estar genuíno.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#E8DFD0] hover:shadow-md transition-shadow">
-                    <div class="w-14 h-14 rounded-xl bg-salvia/20 text-oliva flex items-center justify-center text-xl mb-6">
-                        <i class="fa-solid fa-home"></i>
-                    </div>
-                    <h3 class="font-serif text-xl font-bold text-oliva mb-3">Ambiente Doméstico</h3>
-                    <p class="text-sm text-grafite/70 leading-relaxed">
-                        Esqueça a frieza de clínicas ou hospitais. Nossa casa é aconchegante, organizada e preparada para proporcionar dignidade e conforto no dia a dia.
-                    </p>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#E8DFD0] hover:shadow-md transition-shadow">
-                    <div class="w-14 h-14 rounded-xl bg-salvia/20 text-oliva flex items-center justify-center text-xl mb-6">
-                        <i class="fa-solid fa-leaf"></i>
-                    </div>
-                    <h3 class="font-serif text-xl font-bold text-oliva mb-3">Natureza e Ar Puro</h3>
-                    <p class="text-sm text-grafite/70 leading-relaxed">
-                        Situada no alto de um morro com vista para bosques, a residência oferece ar puro, tranquilidade e contato constante com a natureza ao redor.
-                    </p>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#E8DFD0] hover:shadow-md transition-shadow">
-                    <div class="w-14 h-14 rounded-xl bg-salvia/20 text-oliva flex items-center justify-center text-xl mb-6">
-                        <i class="fa-solid fa-users"></i>
-                    </div>
-                    <h3 class="font-serif text-xl font-bold text-oliva mb-3">Convivência Humana</h3>
-                    <p class="text-sm text-grafite/70 leading-relaxed">
-                        Incentivamos a interação saudável entre os moradores, conversas agradáveis e momentos de partilha em espaços comuns acolhedores.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- NOSSO ACOLHIMENTO -->
-    <section id="acolhimento" class="py-20 md:py-28 bg-[#E8DFD0]/30 border-y border-[#E8DFD0]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-oliva leading-tight">
+                    Um lar tranquilo, cercado de natureza e cuidado.
+                </h1>
                 
-                <div class="lg:col-span-5 space-y-6">
-                    <span class="text-xs font-semibold uppercase tracking-widest text-madeira">Nossos Princípios</span>
-                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-oliva leading-tight">
-                        Cuidado, respeito e dignidade em cada detalhe
-                    </h2>
-                    <p class="text-base text-grafite/80 leading-relaxed">
-                        A nossa filosofia de acolhimento é construída sobre valores sólidos. Acreditamos que cada pessoa idosa traz consigo uma história de vida única que merece total reverência e atenção.
-                    </p>
-                    <div class="space-y-4 pt-2">
-                        <div class="flex items-start gap-4">
-                            <div class="w-8 h-8 rounded-full bg-oliva text-offwhite flex items-center justify-center flex-shrink-0 mt-1">
-                                <i class="fa-solid fa-check text-xs"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-oliva">Respeito à Individualidade</h4>
-                                <p class="text-sm text-grafite/70">Valorizamos o ritmo próprio, as preferências pessoais e a autonomia de cada morador.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div class="w-8 h-8 rounded-full bg-oliva text-offwhite flex items-center justify-center flex-shrink-0 mt-1">
-                                <i class="fa-solid fa-check text-xs"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-oliva">Tranquilidade e Paz</h4>
-                                <p class="text-sm text-grafite/70">Um ambiente seguro e sereno, livre de agitações urbanas desnecessárias.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div class="w-8 h-8 rounded-full bg-oliva text-offwhite flex items-center justify-center flex-shrink-0 mt-1">
-                                <i class="fa-solid fa-check text-xs"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-oliva">Atenção Atenciosa</h4>
-                                <p class="text-sm text-grafite/70">Equipe dedicada a proporcionar um atendimento humanizado e próximo.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="lg:col-span-7 grid grid-cols-2 gap-4">
-                    <img src="assets/images/convivencia.jpg" alt="Idosos conversando e convivendo" class="rounded-2xl shadow-md w-full h-72 sm:h-96 object-cover mt-8" onerror="this.src='https://placehold.co/500x600/A6AE91/FFFFFF?text=Convivencia'">
-                    <img src="assets/images/jardins.jpg" alt="Ambiente verde e tranquilo" class="rounded-2xl shadow-md w-full h-72 sm:h-96 object-cover" onerror="this.src='https://placehold.co/500x600/66745A/FFFFFF?text=Jardins'">
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ESTRUTURA E AMBIENTES -->
-    <section id="estrutura" class="py-20 md:py-28 bg-[#F7F4ED]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
-                <span class="text-xs font-semibold uppercase tracking-widest text-madeira">Espaços Preparados</span>
-                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-oliva">
-                    Estrutura física pensada no conforto
-                </h2>
-                <div class="w-20 h-1 bg-salvia mx-auto rounded-full"></div>
-                <p class="text-base sm:text-lg text-grafite/80">
-                    Nossa residência conta com amplos espaços internos e externos integrados à natureza de Santana de Parnaíba.
+                <p class="text-base sm:text-lg text-grafite/80 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                    Uma residência de longa permanência para homens e mulheres idosos, em um ambiente acolhedor, familiar e tranquilo em Santana de Parnaíba.
                 </p>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="group relative overflow-hidden rounded-2xl shadow-sm border border-[#E8DFD0] bg-white">
-                    <div class="h-64 overflow-hidden">
-                        <img src="assets/images/fachada.jpg" alt="Fachada da residência" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/66745A/FFFFFF?text=Fachada'">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-serif text-lg font-bold text-oliva mb-2">Fachada e Acesso</h3>
-                        <p class="text-sm text-grafite/70">Arquitetura residencial tradicional, acolhedora e integrada ao verde.</p>
-                    </div>
-                </div>
-
-                <div class="group relative overflow-hidden rounded-2xl shadow-sm border border-[#E8DFD0] bg-white">
-                    <div class="h-64 overflow-hidden">
-                        <img src="assets/images/quartos.jpg" alt="Quartos da residência" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/806B55/FFFFFF?text=Quartos'">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-serif text-lg font-bold text-oliva mb-2">Quartos Confortáveis</h3>
-                        <p class="text-sm text-grafite/70">Espaços privativos ou compartilhados preparados para o descanso tranquilo.</p>
-                    </div>
-                </div>
-
-                <div class="group relative overflow-hidden rounded-2xl shadow-sm border border-[#E8DFD0] bg-white">
-                    <div class="h-64 overflow-hidden">
-                        <img src="assets/images/convivencia.jpg" alt="Áreas de convivência" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/A6AE91/FFFFFF?text=Convivencia'">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-serif text-lg font-bold text-oliva mb-2">Áreas de Convivência</h3>
-                        <p class="text-sm text-grafite/70">Salas de estar arejadas para bate-papos e momentos em família.</p>
-                    </div>
-                </div>
-
-                <div class="group relative overflow-hidden rounded-2xl shadow-sm border border-[#E8DFD0] bg-white">
-                    <div class="h-64 overflow-hidden">
-                        <img src="assets/images/jardins.jpg" alt="Jardins e áreas verdes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/66745A/FFFFFF?text=Jardins'">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-serif text-lg font-bold text-oliva mb-2">Jardins e Vistas</h3>
-                        <p class="text-sm text-grafite/70">Áreas verdes amplas no alto do morro com vista relaxante para os bosques.</p>
-                    </div>
-                </div>
-
-                <div class="group relative overflow-hidden rounded-2xl shadow-sm border border-[#E8DFD0] bg-white">
-                    <div class="h-64 overflow-hidden">
-                        <img src="assets/images/ambientes.jpg" alt="Ambientes internos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/806B55/FFFFFF?text=Ambientes'">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-serif text-lg font-bold text-oliva mb-2">Ambientes Internos</h3>
-                        <p class="text-sm text-grafite/70">Espaços limpos, iluminados por luz natural e bem ventilados.</p>
-                    </div>
-                </div>
-
-                <div class="group relative overflow-hidden rounded-2xl shadow-sm border border-[#E8DFD0] bg-white">
-                    <div class="h-64 overflow-hidden">
-                        <img src="assets/images/rotina.jpg" alt="Cotiliano tranquilo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/A6AE91/FFFFFF?text=Rotina'">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-serif text-lg font-bold text-oliva mb-2">Rotina e Cuidado</h3>
-                        <p class="text-sm text-grafite/70">Um dia a dia harmonioso, voltado para a tranquilidade e o respeito mútuo.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PERGUNTAS FREQUENTES (FAQ) -->
-    <section id="faq" class="py-20 md:py-28 bg-[#F7F4ED]">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center space-y-4 mb-16">
-                <span class="text-xs font-semibold uppercase tracking-widest text-madeira">Esclarecimentos</span>
-                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-oliva">
-                    Perguntas Frequentes
-                </h2>
-                <div class="w-20 h-1 bg-salvia mx-auto rounded-full"></div>
-                <p class="text-base text-grafite/80">
-                    Tire suas principais dúvidas sobre a nossa moradia permanente.
-                </p>
-            </div>
-
-            <div class="space-y-4">
-                <div class="bg-white rounded-2xl border border-[#E8DFD0] overflow-hidden shadow-sm">
-                    <button class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between font-serif text-lg font-bold text-oliva hover:bg-salvia/5 transition-colors">
-                        <span>Como funciona a moradia permanente?</span>
-                        <i class="fa-solid fa-chevron-down text-sm text-salvia transition-transform duration-300"></i>
-                    </button>
-                    <div class="faq-content hidden px-6 pb-5 text-sm text-grafite/70 leading-relaxed border-t border-[#E8DFD0]/40 pt-4">
-                        A moradia permanente é destinada a homens e mulheres idosos que buscam um lar estável, seguro e acolhedor para residir por tempo indeterminado, contando com acompanhamento e convivência diária em um ambiente familiar.
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-2xl border border-[#E8DFD0] overflow-hidden shadow-sm">
-                    <button class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between font-serif text-lg font-bold text-oliva hover:bg-salvia/5 transition-colors">
-                        <span>Como conhecer a residência?</span>
-                        <i class="fa-solid fa-chevron-down text-sm text-salvia transition-transform duration-300"></i>
-                    </button>
-                    <div class="faq-content hidden px-6 pb-5 text-sm text-grafite/70 leading-relaxed border-t border-[#E8DFD0]/40 pt-4">
-                        As visitas são agendadas previamente por telefone. Convidamos os familiares a conhecerem nossa casa, conversarem com nossa equipe e verificarem pessoalmente a nossa estrutura em Santana de Parnaíba.
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-2xl border border-[#E8DFD0] overflow-hidden shadow-sm">
-                    <button class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between font-serif text-lg font-bold text-oliva hover:bg-salvia/5 transition-colors">
-                        <span>Como funciona o processo de admissão?</span>
-                        <i class="fa-solid fa-chevron-down text-sm text-salvia transition-transform duration-300"></i>
-                    </button>
-                    <div class="faq-content hidden px-6 pb-5 text-sm text-grafite/70 leading-relaxed border-t border-[#E8DFD0]/40 pt-4">
-                        O processo envolve uma conversa inicial com os familiares, alinhamento de expectativas, apresentação das acomodações e avaliação das necessidades básicas de cuidado para garantir uma adaptação harmoniosa.
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-2xl border border-[#E8DFD0] overflow-hidden shadow-sm">
-                    <button class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between font-serif text-lg font-bold text-oliva hover:bg-salvia/5 transition-colors">
-                        <span>Quais são os critérios para admissão?</span>
-                        <i class="fa-solid fa-chevron-down text-sm text-salvia transition-transform duration-300"></i>
-                    </button>
-                    <div class="faq-content hidden px-6 pb-5 text-sm text-grafite/70 leading-relaxed border-t border-[#E8DFD0]/40 pt-4">
-                        Atendemos homens e mulheres idosos que necessitam de moradia permanente em ambiente residencial. Detalhes específicos de documentação e critérios são repassados individualmente durante o atendimento telefônico ou presencial.
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-2xl border border-[#E8DFD0] overflow-hidden shadow-sm">
-                    <button class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between font-serif text-lg font-bold text-oliva hover:bg-salvia/5 transition-colors">
-                        <span>Como funcionam as visitas dos familiares?</span>
-                        <i class="fa-solid fa-chevron-down text-sm text-salvia transition-transform duration-300"></i>
-                    </button>
-                    <div class="faq-content hidden px-6 pb-5 text-sm text-grafite/70 leading-relaxed border-t border-[#E8DFD0]/40 pt-4">
-                        Incentivamos fortemente o vínculo familiar. As visitas ocorrem em horários flexíveis e harmonizados com a rotina da casa, garantindo proximidade e carinho contínuo dos entes queridos.
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-2xl border border-[#E8DFD0] overflow-hidden shadow-sm">
-                    <button class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between font-serif text-lg font-bold text-oliva hover:bg-salvia/5 transition-colors">
-                        <span>Quais informações devo obter antes de contratar uma residência?</span>
-                        <i class="fa-solid fa-chevron-down text-sm text-salvia transition-transform duration-300"></i>
-                    </button>
-                    <div class="faq-content hidden px-6 pb-5 text-sm text-grafite/70 leading-relaxed border-t border-[#E8DFD0]/40 pt-4">
-                        Recomendamos verificar a idoneidade da instituição, visitar pessoalmente o local, conhecer a equipe responsável, entender a rotina diária e certificar-se de que o perfil do local atende às expectativas de dignidade e conforto da família.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTATO -->
-    <section id="contato" class="py-20 md:py-28 bg-[#E8DFD0]/30 border-t border-[#E8DFD0]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
-                <span class="text-xs font-semibold uppercase tracking-widest text-madeira">Fale Conosco</span>
-                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-oliva">
-                    Entre em contato e agende sua visita
-                </h2>
-                <div class="w-20 h-1 bg-salvia mx-auto rounded-full"></div>
-                <p class="text-base sm:text-lg text-grafite/80">
-                    O principal canal de atendimento é o telefone convencional. Teremos imenso prazer em conversar com você.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
                 
-                <!-- Informações de Contato -->
-                <div class="lg:col-span-5 bg-white p-8 sm:p-10 rounded-3xl shadow-sm border border-[#E8DFD0] space-y-8">
-                    <div>
-                        <h3 class="font-serif text-2xl font-bold text-oliva mb-2">Moradia para Idosos Batista</h3>
-                        <p class="text-sm text-grafite/70">Santana de Parnaíba – SP</p>
-                    </div>
-
-                    <div class="space-y-6">
-                        <!-- Telefone -->
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-2xl bg-salvia/20 text-oliva flex items-center justify-center text-lg flex-shrink-0">
-                                <i class="fa-solid fa-phone"></i>
-                            </div>
-                            <div>
-                                <p class="text-xs text-madeira font-semibold uppercase tracking-wider">Telefone Principal</p>
-                                <a id="contact-phone-link" href="tel:+5511994744866" class="text-lg font-bold text-oliva hover:underline">(11) 99474-4866 / (11) 94159-1579</a>
-                                <p class="text-xs text-grafite/60 mt-0.5">Ligue para agendar sua visita</p>
-                            </div>
-                        </div>
-
-                        <!-- Endereço -->
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-2xl bg-salvia/20 text-oliva flex items-center justify-center text-lg flex-shrink-0">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-                            <div>
-                                <p class="text-xs text-madeira font-semibold uppercase tracking-wider">Endereço</p>
-                                <p id="contact-address-text" class="text-sm font-semibold text-oliva">Estrada do Sítio do Morro, Votuparim</p>
-                                <p class="text-sm text-grafite/70">Santana de Parnaíba – SP, CEP 06513-024</p>
-                            </div>
-                        </div>
-
-                        <!-- Horário -->
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-2xl bg-salvia/20 text-oliva flex items-center justify-center text-lg flex-shrink-0">
-                                <i class="fa-solid fa-clock"></i>
-                            </div>
-                            <div>
-                                <p class="text-xs text-madeira font-semibold uppercase tracking-wider">Horário de Atendimento</p>
-                                <p id="contact-hours-text" class="text-sm font-semibold text-oliva">Atendimento diário das 08h às 18h</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pt-4 border-t border-[#E8DFD0]">
-                        <a id="contact-action-btn" href="tel:+5511994744866" class="w-full py-4 rounded-xl bg-oliva text-offwhite font-semibold hover:bg-madeira transition-all flex items-center justify-center gap-2 shadow-sm text-center">
-                            <i class="fa-solid fa-phone"></i>
-                            <span>Ligar Agora</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Mapa / Espaço Visual -->
-                <div class="lg:col-span-7 bg-white p-4 rounded-3xl shadow-sm border border-[#E8DFD0] h-[450px] flex flex-col justify-center items-center text-center relative overflow-hidden">
-                    <div class="absolute inset-0 bg-[#E8DFD0]/20 flex flex-col items-center justify-center p-8">
-                        <div class="w-16 h-16 rounded-full bg-oliva text-offwhite flex items-center justify-center text-2xl mb-4 shadow-md">
-                            <i class="fa-solid fa-map-location-dot"></i>
-                        </div>
-                        <h4 class="font-serif text-xl font-bold text-oliva mb-2">Santana de Parnaíba – SP</h4>
-                        <p class="text-sm text-grafite/70 max-w-md mx-auto mb-6">
-                            Localizada em área privilegiada no alto do morro, com vista para bosques e fácil acesso na região de Santana de Parnaíba.
-                        </p>
-                        <div class="px-6 py-3 rounded-xl bg-white border border-[#E8DFD0] text-xs font-semibold text-oliva shadow-sm">
-                            Estrada do Sítio do Morro - Votuparim
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="bg-oliva text-offwhite pt-16 pb-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-offwhite/20">
-                
-                <!-- Coluna 1 -->
-                <div class="space-y-4">
-                    <div class="flex items-center gap-3">
-                        <div class="w-8 h-8 rounded-full bg-salvia flex items-center justify-center text-oliva">
-                            <i class="fa-solid fa-house-chimney text-sm"></i>
-                        </div>
-                        <span class="font-serif text-lg font-bold text-offwhite">Moradia Batista</span>
-                    </div>
-                    <p class="text-sm text-offwhite/80 leading-relaxed">
-                        Um lar tranquilo, cercado de natureza e cuidado, proporcionando acolhimento e dignidade para idosos em Santana de Parnaíba.
-                    </p>
-                </div>
-
-                <!-- Coluna 2 -->
-                <div class="space-y-4">
-                    <h4 class="font-serif text-base font-bold text-offwhite uppercase tracking-wider">Navegação</h4>
-                    <ul class="space-y-2 text-sm text-offwhite/80">
-                        <li><a href="#inicio" class="hover:text-salvia transition-colors">Início</a></li>
-                        <li><a href="#nossa-casa" class="hover:text-salvia transition-colors">Nossa Casa</a></li>
-                        <li><a href="#acolhimento" class="hover:text-salvia transition-colors">Acolhimento</a></li>
-                        <li><a href="#estrutura" class="hover:text-salvia transition-colors">Estrutura</a></li>
-                        <li><a href="#faq" class="hover:text-salvia transition-colors">Dúvidas Frequentes</a></li>
-                    </ul>
-                </div>
-
-                <!-- Coluna 3 -->
-                <div class="space-y-4">
-                    <h4 class="font-serif text-base font-bold text-offwhite uppercase tracking-wider">Institucional</h4>
-                    <ul class="space-y-2 text-sm text-offwhite/80">
-                        <li><a href="#faq" class="hover:text-salvia transition-colors">Dúvidas Frequentes</a></li>
-                        <li><a href="#contato" class="hover:text-salvia transition-colors">Contato Telefônico</a></li>
-                        <li><span class="text-offwhite/60 text-xs">Moradia Permanente</span></li>
-                        <li><span class="text-offwhite/60 text-xs">Santana de Parnaíba – SP</span></li>
-                    </ul>
-                </div>
-
-                <!-- Coluna 4 -->
-                <div class="space-y-4">
-                    <h4 class="font-serif text-base font-bold text-offwhite uppercase tracking-wider">Contato Rápido</h4>
-                    <p class="text-sm text-offwhite/80">
-                        Ligue e tire suas dúvidas com nossa equipe de atendimento:
-                    </p>
-                    <a id="footer-phone" href="tel:+5511994744866" class="inline-block text-lg font-bold text-salvia hover:underline">
-                        (11) 99474-4866 / (11) 94159-1579
+                <!-- Botões CTA -->
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                    <a id="hero-whatsapp-btn" href="#" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-whatsapp text-white font-semibold hover:opacity-90 transition-all shadow-md text-center flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>Fale pelo WhatsApp</span>
+                    </a>
+                    <a href="#contato" class="w-full sm:w-auto px-8 py-4 rounded-xl border-2 border-oliva/30 text-oliva font-semibold hover:bg-oliva/10 transition-all text-center">
+                        Agende uma visita
                     </a>
                 </div>
 
+                <!-- Selos -->
+                <div class="pt-6 flex items-center justify-center lg:justify-start gap-6 text-xs text-madeira font-medium">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-heart-pulse text-oliva text-base"></i>
+                        <span>Atendimento Humanizado</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-tree text-oliva text-base"></i>
+                        <span>Ambiente Verde e Arejado</span>
+                    </div>
+                </div>
             </div>
 
-            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-offwhite/60 gap-4">
-                <p>&copy; 2026 Moradia para Idosos Batista. Todos os direitos reservados.</p>
-                <p>Santana de Parnaíba – SP</p>
+            <!-- Imagem Hero Principal -->
+            <div class="lg:col-span-5 relative">
+                <div class="relative mx-auto max-w-md lg:max-w-none">
+                    <div class="absolute -inset-4 rounded-3xl bg-salvia/30 transform rotate-2 -z-10"></div>
+                    <img src="assets/images/hero-residencia.jpg" 
+                         alt="Casa ampla e acolhedora cercada por natureza em Santana de Parnaíba" 
+                         class="rounded-2xl shadow-xl w-full h-[420px] sm:h-[500px] object-cover"
+                         onerror="this.src='https://placehold.co/600x700/66745A/FFFFFF?text=Hero+Residencia'">
+                    
+                    <div class="absolute bottom-6 left-6 right-6 bg-offwhite/95 backdrop-blur-sm p-4 rounded-xl shadow-lg border border-[#E8DFD0]">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-salvia/30 flex items-center justify-center text-oliva">
+                                <i class="fa-solid fa-mountain-sun"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-madeira font-semibold uppercase tracking-wider">Localização Privilegiada</p>
+                                <p class="text-sm font-serif font-bold text-oliva">No alto do morro, com vista para bosques</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- NOSSA CASA -->
+<section id="nossa-casa" class="py-20 md:py-28 bg-[#F7F4ED]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+            <span class="text-xs font-semibold uppercase tracking-widest text-madeira">Conheça a Instituição</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-oliva">
+                Um ambiente residencial, familiar e tranquilo
+            </h2>
+            <div class="w-20 h-1 bg-salvia mx-auto rounded-full"></div>
+            <p class="text-base sm:text-lg text-grafite/80 pt-2 leading-relaxed">
+                A Moradia para Idosos Batista foi estruturada para ser um verdadeiro lar. Localizada em Santana de Parnaíba, em uma casa ampla situada no alto de um morro com agradável vista para bosques e áreas verdes, nossa instituição prioriza o bem-estar genuíno.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#E8DFD0] hover:shadow-md transition-shadow">
+                <div class="w-14 h-14 rounded-xl bg-salvia/20 text-oliva flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-home"></i>
+                </div>
+                <h3 class="font-serif text-xl font-bold text-oliva mb-3">Ambiente Doméstico</h3>
+                <p class="text-sm text-grafite/70 leading-relaxed">
+                    Esqueça a frieza de clínicas ou hospitais. Nossa casa é aconchegante, organizada e preparada para proporcionar dignidade e conforto no dia a dia.
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#E8DFD0] hover:shadow-md transition-shadow">
+                <div class="w-14 h-14 rounded-xl bg-salvia/20 text-oliva flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+                <h3 class="font-serif text-xl font-bold text-oliva mb-3">Natureza e Ar Puro</h3>
+                <p class="text-sm text-grafite/70 leading-relaxed">
+                    Situada no alto de um morro com vista para bosques, a residência oferece ar puro, tranquilidade e contato constante com a natureza ao redor.
+                </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#E8DFD0] hover:shadow-md transition-shadow">
+                <div class="w-14 h-14 rounded-xl bg-salvia/20 text-oliva flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <h3 class="font-serif text-xl font-bold text-oliva mb-3">Convivência Humana</h3>
+                <p class="text-sm text-grafite/70 leading-relaxed">
+                    Incentivamos a interação saudável entre os moradores, conversas agradáveis e momentos de partilha em espaços comuns acolhedores.
+                </p>
             </div>
         </div>
-    </footer>
-
-    <!-- BOTÃO FLUTUANTE DE TELEFONE (Mobile) -->
-    <div class="fixed bottom-6 right-6 z-40 md:hidden">
-        <a id="floating-phone-btn" href="tel:+5511994744866" aria-label="Ligar para a instituição" class="w-14 h-14 rounded-full bg-oliva text-offwhite flex items-center justify-center text-xl shadow-xl hover:bg-madeira transition-all animate-bounce">
-            <i class="fa-solid fa-phone"></i>
-        </a>
     </div>
+</section>
 
-    <!-- SCRIPT DE INTERATIVIDADE E CONFIGURAÇÃO -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Garante que o CONFIG global esteja disponível antes de renderizar
-            const cfg = window.CONFIG || {};
+<!-- NOSSO ACOLHIMENTO -->
+<section id="acolhimento" class="py-20 md:py-28 bg-[#E8DFD0]/30 border-y border-[#E8DFD0]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-5 space-y-6">
+                <span class="text-xs font-semibold uppercase tracking-widest text-madeira">Nossos Princípios</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-oliva leading-tight">
+                    Cuidado, respeito e dignidade em cada detalhe
+                </h2>
+                <p class="text-base text-grafite/80 leading-relaxed">
+                    A nossa filosofia de acolhimento é construída sobre valores sólidos. Acreditamos que cada pessoa idosa traz consigo uma história de vida única que merece total reverência e atenção.
+                </p>
+                <div class="space-y-4 pt-2">
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-full bg-oliva text-offwhite flex items-center justify-center flex-shrink-0 mt-1">
+                            <i class="fa-solid fa-check text-xs"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-oliva">Respeito à Individualidade</h4>
+                            <p class="text-sm text-grafite/70">Valorizamos o ritmo próprio, as preferências pessoais e a autonomia de cada morador.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-full bg-oliva text-offwhite flex items-center justify-center flex-shrink-0 mt-1">
+                            <i class="fa-solid fa-check text-xs"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-oliva">Tranquilidade e Paz</h4>
+                            <p class="text-sm text-grafite/70">Um ambiente seguro e sereno, livre de agitações urbanas desnecessárias.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-full bg-oliva text-offwhite flex items-center justify-center flex-shrink-0 mt-1">
+                            <i class="fa-solid fa-check text-xs"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-oliva">Atenção Atenciosa</h4>
+                            <p class="text-sm text-grafite/70">Equipe dedicada a proporcionar um atendimento humanizado e próximo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            const setElemText = (id, text) => {
-                const el = document.getElementById(id);
-                if (el && text) el.innerText = text;
-            };
+            <div class="lg:col-span-7 grid grid-cols-2 gap-4">
+                <img src="assets/images/convivencia.jpg" alt="Idosos conversando e convivendo" class="rounded-2xl shadow-md w-full h-72 sm:h-96 object-cover mt-8" onerror="this.src='https://placehold.co/500x600/A6AE91/FFFFFF?text=Convivencia'">
+                <img src="assets/images/jardins.jpg" alt="Ambiente verde e tranquilo" class="rounded-2xl shadow-md w-full h-72 sm:h-96 object-cover" onerror="this.src='https://placehold.co/500x600/66745A/FFFFFF?text=Jardins'">
+            </div>
 
-            const setElemHref = (id, href) => {
-                const el = document.getElementById(id);
-                if (el && href) el.href = href;
-            };
+        </div>
+    </div>
+</section>
 
-            // Aplicar dados do CONFIG nos elementos correspondentes de forma segura
-            setElemText('header-phone-text', cfg.telefoneDisplay);
-            setElemHref('header-phone-btn', `tel:${cfg.telefoneTel}`);
-            setElemText('contact-phone-link', cfg.telefoneDisplay);
-            setElemHref('contact-phone-link', `tel:${cfg.telefoneTel}`);
-            setElemHref('contact-action-btn', `tel:${cfg.telefoneTel}`);
-            setElemText('contact-address-text', cfg.endereco);
-            setElemText('contact-hours-text', cfg.horario);
-            setElemText('footer-phone', cfg.telefoneDisplay);
-            setElemHref('footer-phone', `tel:${cfg.telefoneTel}`);
-            setElemHref('floating-phone-btn', `tel:${cfg.telefoneTel}`);
-            setElemHref('mobile-phone-drawer', `tel:${cfg.telefoneTel}`);
+<!-- ESTRUTURA E AMBIENTES -->
+<section id="estrutura" class="py-20 md:py-28 bg-[#F7F4ED]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+            <span class="text-xs font-semibold uppercase tracking-widest text-madeira">Espaços Preparados</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-oliva">
+                Estrutura física pensada no conforto
+            </h2>
+            <div class="w-20 h-1 bg-salvia mx-auto rounded-full"></div>
+            <p class="text-base sm:text-lg text-grafite/80">
+                Nossa residência conta com amplos espaços internos e externos integrados à natureza de Santana de Parnaíba.
+            </p>
+        </div>
 
-            // Menu Mobile Toggle
-            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const mobileLinks = document.querySelectorAll('.mobile-link');
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="group relative overflow-hidden rounded-2xl shadow-sm border border-[#E8DFD0] bg-white">
+                <div class="h-64 overflow-hidden">
+                    <img src="assets/images/fachada.jpg" alt="Fachada da residência" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/66745A/FFFFFF?text=Fachada'">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-serif text-lg font-bold text-oliva mb-2">Fachada e Acesso</h3>
+                    <p class="text-sm text-grafite/70">Arquitetura residencial tradicional, acolhedora e integrada ao verde.</p>
+                </div>
+            </div>
 
-            if (mobileMenuBtn && mobileMenu) {
-                mobileMenuBtn.addEventListener('click', () => {
-                    mobileMenu.classList.toggle('hidden');
+            <div class="group relative overflow-hidden rounded-2xl shadow-sm border border-[#E8DFD0] bg-white">
+                <div class="h-64 overflow-hidden">
+                    <img src="assets/images/quartos.jpg" alt="Quartos da residência" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/806B55/FFFFFF?text=Quartos'">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-serif text-lg font-bold text-oliva mb-2">Quartos Confortáveis</h3>
+                    <p class="text-sm text-grafite/70">Espaços compartilhados preparados para o descanso tranquilo.</p>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-2xl shadow-sm border border-[#E8DFD0] bg-white">
+                <div class="h-64 overflow-hidden">
+                    <img src="assets/images/convivencia.jpg" alt="Áreas de convivência" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/A6AE91/FFFFFF?text=Convivencia'">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-serif text-lg font-bold text-oliva mb-2">Áreas de Convivência</h3>
+                    <p class="text-sm text-grafite/70">Salas de estar arejadas para bate-papos e momentos em família.</p>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-2xl shadow-sm border border-[#E8DFD0] bg-white">
+                <div class="h-64 overflow-hidden">
+                    <img src="assets/images/jardins.jpg" alt="Jardins e áreas verdes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/66745A/FFFFFF?text=Jardins'">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-serif text-lg font-bold text-oliva mb-2">Jardins e Vistas</h3>
+                    <p class="text-sm text-grafite/70">Áreas verdes amplas no alto do morro com vista relaxante para os bosques.</p>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-2xl shadow-sm border border-[#E8DFD0] bg-white">
+                <div class="h-64 overflow-hidden">
+                    <img src="assets/images/ambientes.jpg" alt="Ambientes internos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/806B55/FFFFFF?text=Ambientes'">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-serif text-lg font-bold text-oliva mb-2">Ambientes Internos</h3>
+                    <p class="text-sm text-grafite/70">Espaços limpos, iluminados por luz natural e bem ventilados.</p>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-2xl shadow-sm border border-[#E8DFD0] bg-white">
+                <div class="h-64 overflow-hidden">
+                    <img src="assets/images/rotina.jpg" alt="Cotiliano tranquilo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/A6AE91/FFFFFF?text=Rotina'">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-serif text-lg font-bold text-oliva mb-2">Rotina e Cuidado</h3>
+                    <p class="text-sm text-grafite/70">Um dia a dia harmonioso, voltado para a tranquilidade e o respeito mútuo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PERGUNTAS FREQUENTES (FAQ) -->
+<section id="faq" class="py-20 md:py-28 bg-[#F7F4ED]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center space-y-4 mb-16">
+            <span class="text-xs font-semibold uppercase tracking-widest text-madeira">Esclarecimentos</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-oliva">
+                Perguntas Frequentes
+            </h2>
+            <div class="w-20 h-1 bg-salvia mx-auto rounded-full"></div>
+            <p class="text-base text-grafite/80">
+                Tire suas principais dúvidas sobre a nossa moradia permanente.
+            </p>
+        </div>
+
+        <div class="space-y-4">
+            <div class="bg-white rounded-2xl border border-[#E8DFD0] overflow-hidden shadow-sm">
+                <button class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between font-serif text-lg font-bold text-oliva hover:bg-salvia/5 transition-colors">
+                    <span>Como funciona a moradia permanente?</span>
+                    <i class="fa-solid fa-chevron-down text-sm text-salvia transition-transform duration-300"></i>
+                </button>
+                <div class="faq-content hidden px-6 pb-5 text-sm text-grafite/70 leading-relaxed border-t border-[#E8DFD0]/40 pt-4">
+                    A moradia permanente é destinada a homens e mulheres idosos que buscam um lar estável, seguro e acolhedor para residir por tempo indeterminado, contando com acompanhamento e convivência diária em um ambiente familiar.
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-[#E8DFD0] overflow-hidden shadow-sm">
+                <button class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between font-serif text-lg font-bold text-oliva hover:bg-salvia/5 transition-colors">
+                    <span>Como conhecer a residência?</span>
+                    <i class="fa-solid fa-chevron-down text-sm text-salvia transition-transform duration-300"></i>
+                </button>
+                <div class="faq-content hidden px-6 pb-5 text-sm text-grafite/70 leading-relaxed border-t border-[#E8DFD0]/40 pt-4">
+                    As visitas são agendadas previamente por telefone ou WhatsApp. Convidamos os familiares a conhecerem nossa casa, conversarem com nossa equipe e verificarem pessoalmente a nossa estrutura em Santana de Parnaíba.
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-[#E8DFD0] overflow-hidden shadow-sm">
+                <button class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between font-serif text-lg font-bold text-oliva hover:bg-salvia/5 transition-colors">
+                    <span>Como funciona o processo de admissão?</span>
+                    <i class="fa-solid fa-chevron-down text-sm text-salvia transition-transform duration-300"></i>
+                </button>
+                <div class="faq-content hidden px-6 pb-5 text-sm text-grafite/70 leading-relaxed border-t border-[#E8DFD0]/40 pt-4">
+                    O processo envolve uma conversa inicial com os familiares, alinhamento de expectativas, apresentação das acomodações e avaliação das necessidades básicas de cuidado para garantir uma adaptação harmoniosa.
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-[#E8DFD0] overflow-hidden shadow-sm">
+                <button class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between font-serif text-lg font-bold text-oliva hover:bg-salvia/5 transition-colors">
+                    <span>Quais são os critérios para admissão?</span>
+                    <i class="fa-solid fa-chevron-down text-sm text-salvia transition-transform duration-300"></i>
+                </button>
+                <div class="faq-content hidden px-6 pb-5 text-sm text-grafite/70 leading-relaxed border-t border-[#E8DFD0]/40 pt-4">
+                    Atendemos homens e mulheres idosos que necessitam de moradia permanente em ambiente residencial. Detalhes específicos de documentação e critérios são repassados individualmente durante o atendimento telefônico ou presencial.
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-[#E8DFD0] overflow-hidden shadow-sm">
+                <button class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between font-serif text-lg font-bold text-oliva hover:bg-salvia/5 transition-colors">
+                    <span>Como funcionam as visitas dos familiares?</span>
+                    <i class="fa-solid fa-chevron-down text-sm text-salvia transition-transform duration-300"></i>
+                </button>
+                <div class="faq-content hidden px-6 pb-5 text-sm text-grafite/70 leading-relaxed border-t border-[#E8DFD0]/40 pt-4">
+                    Incentivamos fortemente o vínculo familiar. As visitas ocorrem em horários flexíveis e harmonizados com a rotina da casa, garantindo proximidade e carinho contínuo dos entes queridos.
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-[#E8DFD0] overflow-hidden shadow-sm">
+                <button class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between font-serif text-lg font-bold text-oliva hover:bg-salvia/5 transition-colors">
+                    <span>Quais informações devo obter antes de contratar uma residência?</span>
+                    <i class="fa-solid fa-chevron-down text-sm text-salvia transition-transform duration-300"></i>
+                </button>
+                <div class="faq-content hidden px-6 pb-5 text-sm text-grafite/70 leading-relaxed border-t border-[#E8DFD0]/40 pt-4">
+                    Recomendamos verificar a idoneidade da instituição, visitar pessoalmente o local, conhecer a equipe responsável, entender a rotina diária e certificar-se de que o perfil do local atende às expectativas de dignidade e conforto da família.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TRABALHE CONOSCO -->
+<section id="trabalhe-conosco" class="py-16 bg-white border-t border-[#E8DFD0]">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-gradient-to-r from-oliva/10 via-salvia/20 to-oliva/10 p-8 sm:p-12 rounded-3xl border border-oliva/20 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="space-y-3 text-center md:text-left">
+                <span class="text-xs font-semibold uppercase tracking-widest text-madeira">Oportunidades de Emprego</span>
+                <h3 class="font-serif text-2xl sm:text-3xl font-bold text-oliva">Trabalhe Conosco</h3>
+                <p class="text-sm sm:text-base text-grafite/80 max-w-xl">
+                    Você é um profissional dedicado ao cuidado humanizado e acolhimento? Envie seu currículo e venha fazer parte da nossa equipe.
+                </p>
+            </div>
+            <div>
+                <a id="trabalhe-whatsapp-btn" href="#" target="_blank" class="px-6 py-4 rounded-xl bg-oliva text-offwhite font-semibold hover:bg-madeira transition-all shadow-sm flex items-center gap-3 whitespace-nowrap">
+                    <i class="fa-solid fa-paper-plane text-sm"></i>
+                    <span>Enviar Currículo no WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="py-20 md:py-28 bg-[#E8DFD0]/30 border-t border-[#E8DFD0]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+            <span class="text-xs font-semibold uppercase tracking-widest text-madeira">Fale Conosco</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-oliva">
+                Entre em contato e agende sua visita
+            </h2>
+            <div class="w-20 h-1 bg-salvia mx-auto rounded-full"></div>
+            <p class="text-base sm:text-lg text-grafite/80">
+                Atendemos via ligação telefônica convencional ou mensagem instantânea via WhatsApp.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            
+            <!-- Informações de Contato -->
+            <div class="lg:col-span-5 bg-white p-8 sm:p-10 rounded-3xl shadow-sm border border-[#E8DFD0] space-y-8">
+                <div>
+                    <h3 class="font-serif text-2xl font-bold text-oliva mb-2">Moradia para Idosos Batista</h3>
+                    <p class="text-sm text-grafite/70">Santana de Parnaíba – SP</p>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- Telefone -->
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-salvia/20 text-oliva flex items-center justify-center text-lg flex-shrink-0">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-madeira font-semibold uppercase tracking-wider">Telefone Principal</p>
+                            <a id="contact-phone-link" href="tel:+5511994744866" class="text-lg font-bold text-oliva hover:underline">(11) 99474-4866 / (11) 94159-1579</a>
+                            <p class="text-xs text-grafite/60 mt-0.5">Ligue para agendar sua visita</p>
+                        </div>
+                    </div>
+
+                    <!-- WhatsApp -->
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-whatsapp/20 text-whatsapp flex items-center justify-center text-xl flex-shrink-0">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-madeira font-semibold uppercase tracking-wider">WhatsApp Directo</p>
+                            <a id="contact-whatsapp-link" href="#" target="_blank" class="text-lg font-bold text-whatsapp hover:underline">Conversar pelo WhatsApp</a>
+                            <p class="text-xs text-grafite/60 mt-0.5">Resposta rápida de atendimento</p>
+                        </div>
+                    </div>
+
+                    <!-- Endereço -->
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-salvia/20 text-oliva flex items-center justify-center text-lg flex-shrink-0">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-madeira font-semibold uppercase tracking-wider">Endereço</p>
+                            <p id="contact-address-text" class="text-sm font-semibold text-oliva">Estrada do Sítio do Morro, Votuparim</p>
+                            <p class="text-sm text-grafite/70">Santana de Parnaíba – SP, CEP 06513-024</p>
+                        </div>
+                    </div>
+
+                    <!-- Horário -->
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-salvia/20 text-oliva flex items-center justify-center text-lg flex-shrink-0">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-madeira font-semibold uppercase tracking-wider">Horário de Atendimento</p>
+                            <p id="contact-hours-text" class="text-sm font-semibold text-oliva">Atendimento diário das 08h às 18h</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-[#E8DFD0] grid grid-cols-2 gap-3">
+                    <a id="contact-action-whatsapp" href="#" target="_blank" class="py-3.5 rounded-xl bg-whatsapp text-white font-semibold hover:opacity-90 transition-all flex items-center justify-center gap-2 shadow-sm text-sm text-center">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a id="contact-action-btn" href="tel:+5511994744866" class="py-3.5 rounded-xl bg-oliva text-offwhite font-semibold hover:bg-madeira transition-all flex items-center justify-center gap-2 shadow-sm text-sm text-center">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>Ligar</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mapa / Espaço Visual -->
+            <div class="lg:col-span-7 bg-white p-4 rounded-3xl shadow-sm border border-[#E8DFD0] h-[450px] flex flex-col justify-center items-center text-center relative overflow-hidden">
+                <div class="absolute inset-0 bg-[#E8DFD0]/20 flex flex-col items-center justify-center p-8">
+                    <div class="w-16 h-16 rounded-full bg-oliva text-offwhite flex items-center justify-center text-2xl mb-4 shadow-md">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <h4 class="font-serif text-xl font-bold text-oliva mb-2">Santana de Parnaíba – SP</h4>
+                    <p class="text-sm text-grafite/70 max-w-md mx-auto mb-6">
+                        Localizada em área privilegiada no alto do morro, com vista para bosques e fácil acesso na região de Santana de Parnaíba.
+                    </p>
+                    <div class="px-6 py-3 rounded-xl bg-white border border-[#E8DFD0] text-xs font-semibold text-oliva shadow-sm">
+                        Estrada do Sítio do Morro - Votuparim
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-oliva text-offwhite pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-offwhite/20">
+            
+            <!-- Coluna 1 -->
+            <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-full bg-salvia flex items-center justify-center text-oliva">
+                        <i class="fa-solid fa-house-chimney text-sm"></i>
+                    </div>
+                    <span class="font-serif text-lg font-bold text-offwhite">Moradia Batista</span>
+                </div>
+                <p class="text-sm text-offwhite/80 leading-relaxed">
+                    Um lar tranquilo, cercado de natureza e cuidado, proporcionando acolhimento e dignidade para idosos em Santana de Parnaíba.
+                </p>
+            </div>
+
+            <!-- Coluna 2 -->
+            <div class="space-y-4">
+                <h4 class="font-serif text-base font-bold text-offwhite uppercase tracking-wider">Navegação</h4>
+                <ul class="space-y-2 text-sm text-offwhite/80">
+                    <li><a href="#inicio" class="hover:text-salvia transition-colors">Início</a></li>
+                    <li><a href="#nossa-casa" class="hover:text-salvia transition-colors">Nossa Casa</a></li>
+                    <li><a href="#acolhimento" class="hover:text-salvia transition-colors">Acolhimento</a></li>
+                    <li><a href="#estrutura" class="hover:text-salvia transition-colors">Estrutura</a></li>
+                    <li><a href="#trabalhe-conosco" class="hover:text-salvia transition-colors">Trabalhe Conosco</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 3 -->
+            <div class="space-y-4">
+                <h4 class="font-serif text-base font-bold text-offwhite uppercase tracking-wider">Institucional</h4>
+                <ul class="space-y-2 text-sm text-offwhite/80">
+                    <li><a href="#faq" class="hover:text-salvia transition-colors">Dúvidas Frequentes</a></li>
+                    <li><a href="#contato" class="hover:text-salvia transition-colors">Contato Telefônico</a></li>
+                    <li><span class="text-offwhite/60 text-xs">Moradia Permanente</span></li>
+                    <li><span class="text-offwhite/60 text-xs">Santana de Parnaíba – SP</span></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 4 -->
+            <div class="space-y-4">
+                <h4 class="font-serif text-base font-bold text-offwhite uppercase tracking-wider">Contato Rápido</h4>
+                <p class="text-sm text-offwhite/80">
+                    Ligue e tire suas dúvidas com nossa equipe de atendimento:
+                </p>
+                <a id="footer-phone" href="tel:+5511994744866" class="inline-block text-lg font-bold text-salvia hover:underline">
+                    (11) 99474-4866 / (11) 94159-1579
+                </a>
+            </div>
+
+        </div>
+
+        <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-offwhite/60 gap-4">
+            <p>&copy; 2026 Moradia para Idosos Batista. Todos os direitos reservados.</p>
+            <p>Santana de Parnaíba – SP</p>
+        </div>
+    </div>
+</footer>
+
+<!-- BOTÕES FLUTUANTES (Mobile) -->
+<div class="fixed bottom-6 right-6 z-40 flex flex-col gap-3 md:hidden">
+    <a id="floating-whatsapp-btn" href="#" target="_blank" aria-label="WhatsApp" class="w-14 h-14 rounded-full bg-whatsapp text-white flex items-center justify-center text-2xl shadow-xl hover:opacity-90 transition-all">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a id="floating-phone-btn" href="tel:+5511994744866" aria-label="Ligar para a instituição" class="w-14 h-14 rounded-full bg-oliva text-offwhite flex items-center justify-center text-xl shadow-xl hover:bg-madeira transition-all">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+</div>
+
+<!-- SCRIPT DE INTERATIVIDADE E CONFIGURAÇÃO -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const cfg = window.CONFIG || {};
+
+        const setElemText = (id, text) => {
+            const el = document.getElementById(id);
+            if (el && text) el.innerText = text;
+        };
+
+        const setElemHref = (id, href) => {
+            const el = document.getElementById(id);
+            if (el && href) el.href = href;
+        };
+
+        // Criar URLs de WhatsApp codificadas
+        const whatsappUrl = `https://wa.me/${cfg.whatsappNumber}?text=${encodeURIComponent(cfg.whatsappMensagem || '')}`;
+        const trabalheUrl = `https://wa.me/${cfg.whatsappNumber}?text=${encodeURIComponent(cfg.trabalheConoscoMensagem || '')}`;
+
+        // Aplicar links do WhatsApp
+        setElemHref('header-whatsapp-btn', whatsappUrl);
+        setElemHref('hero-whatsapp-btn', whatsappUrl);
+        setElemHref('mobile-whatsapp-drawer', whatsappUrl);
+        setElemHref('contact-whatsapp-link', whatsappUrl);
+        setElemHref('contact-action-whatsapp', whatsappUrl);
+        setElemHref('floating-whatsapp-btn', whatsappUrl);
+        setElemHref('trabalhe-whatsapp-btn', trabalheUrl);
+
+        // Aplicar dados telefônicos do CONFIG
+        setElemText('header-phone-text', cfg.telefoneDisplay);
+        setElemHref('header-phone-btn', `tel:${cfg.telefoneTel}`);
+        setElemText('contact-phone-link', cfg.telefoneDisplay);
+        setElemHref('contact-phone-link', `tel:${cfg.telefoneTel}`);
+        setElemHref('contact-action-btn', `tel:${cfg.telefoneTel}`);
+        setElemText('contact-address-text', cfg.endereco);
+        setElemText('contact-hours-text', cfg.horario);
+        setElemText('footer-phone', cfg.telefoneDisplay);
+        setElemHref('footer-phone', `tel:${cfg.telefoneTel}`);
+        setElemHref('floating-phone-btn', `tel:${cfg.telefoneTel}`);
+        setElemHref('mobile-phone-drawer', `tel:${cfg.telefoneTel}`);
+
+        // Menu Mobile Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
                 });
+            });
+        }
 
-                mobileLinks.forEach(link => {
-                    link.addEventListener('click', () => {
-                        mobileMenu.classList.add('hidden');
-                    });
-                });
-            }
-
-            // Accordion FAQ
-            const faqToggles = document.querySelectorAll('.faq-toggle');
-            faqToggles.forEach(toggle => {
-                toggle.addEventListener('click', () => {
-                    const content = toggle.nextElementSibling;
-                    const icon = toggle.querySelector('i');
-                    
-                    // Fechar outros
-                    document.querySelectorAll('.faq-content').forEach(item => {
-                        if (item !== content) {
-                            item.classList.add('hidden');
-                            if (item.previousElementSibling && item.previousElementSibling.querySelector('i')) {
-                                item.previousElementSibling.querySelector('i').style.transform = 'rotate(0deg)';
-                            }
-                        }
-                    });
-
-                    content.classList.toggle('hidden');
-                    if (icon) {
-                        if (!content.classList.contains('hidden')) {
-                            icon.style.transform = 'rotate(180deg)';
-                        } else {
-                            icon.style.transform = 'rotate(0deg)';
+        // Accordion FAQ
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('i');
+                
+                document.querySelectorAll('.faq-content').forEach(item => {
+                    if (item !== content) {
+                        item.classList.add('hidden');
+                        if (item.previousElementSibling && item.previousElementSibling.querySelector('i')) {
+                            item.previousElementSibling.querySelector('i').style.transform = 'rotate(0deg)';
                         }
                     }
                 });
-            });
 
-            // Efeito de sombra no header ao rolar a página
-            window.addEventListener('scroll', () => {
-                const header = document.getElementById('header');
-                if (header) {
-                    if (window.scrollY > 40) {
-                        header.classList.add('shadow-md', 'bg-offwhite');
+                content.classList.toggle('hidden');
+                if (icon) {
+                    if (!content.classList.contains('hidden')) {
+                        icon.style.transform = 'rotate(180deg)';
                     } else {
-                        header.classList.remove('shadow-md');
+                        icon.style.transform = 'rotate(0deg)';
                     }
                 }
             });
         });
-    </script>
-</body>
-</html>
+
+        // Sombra no header
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (header) {
+                if (window.scrollY > 40) {
+                    header.classList.add('shadow-md', 'bg-offwhite');
+                } else {
+                    header.classList.remove('shadow-md');
+                }
+            }
+        });
+    });
+</script>
+
